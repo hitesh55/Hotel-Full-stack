@@ -1,0 +1,171 @@
+.searchItem {
+  border: 1px solid lightgray;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.siImg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.siDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 2;
+}
+
+.siTitle {
+  font-size: 24px;
+  color: #0071c2;
+}
+
+.siDistance {
+  font-size: 14px;
+  color: #555555;
+}
+
+.siTaxiOp {
+  font-size: 14px;
+  background-color: #008009;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.siTaxiOp:hover {
+  background-color: #006d07;
+}
+
+.siTaxiOp:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 128, 9, 0.5);
+}
+
+.siTaxiOp:active {
+  background-color: #005f06;
+}
+
+
+.siSubtitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.siFeatures {
+  font-size: 14px;
+  color: #555555;
+}
+
+.siCancelOp {
+  font-size: 14px;
+  color: #008009;
+  font-weight: bold;
+}
+
+.siCancelOpSubtitle {
+  font-size: 14px;
+  color: #008009;
+}
+
+.siDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.siRating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.siRating > span {
+  font-weight: 500;
+  color: #555555;
+  font-size: 14px;
+}
+
+.siRating > button {
+  background-color: #003580;
+  color: white;
+  padding: 8px 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.siRating > button:hover {
+  background-color: #002f6c;
+}
+
+.siRating > button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 53, 128, 0.5);
+}
+
+.siRating > button:active {
+  background-color: #002758;
+}
+
+
+.siDetailTexts {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.siPrice {
+  font-size: 24px;
+  color: #333333;
+}
+
+.siTaxOp {
+  font-size: 14px;
+  color: gray;
+}
+
+.siCheckButton {
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.siCheckButton:hover {
+  background-color: #005ba7;
+}
+
+.siCheckButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 113, 194, 0.5);
+}
+
+.siCheckButton:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+
+.siCheckButton:disabled:hover {
+  background-color: #d6d6d6;
+}
+

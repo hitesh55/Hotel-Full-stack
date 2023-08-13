@@ -1,0 +1,140 @@
+
+
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+.listSearch {
+  flex: 1;
+  background-color: #e8f0fe;
+  padding: 20px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+.lsTitle {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.lsItem > label {
+  font-size: 14px;
+  color: #555555;
+}
+
+.lsItem > input {
+  height: 40px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.lsItem > span {
+  height: 40px;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.lsOptions {
+  padding: 10px;
+}
+
+.lsOptionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555555;
+  font-size: 14px;
+}
+
+.lsOptionInput {
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.listSearch > button {
+  padding: 10px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+.listSearch > button:hover {
+  background-color: #005fa8;
+  transform: scale(1.05); /* Scale up the button on hover */
+}
+
+.listSearch > button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 113, 194, 0.4);
+}
+
+.listSearch > button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.listSearch > button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1); /* Add a semi-transparent overlay */
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.listSearch > button:hover:before {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.listSearch > button:active:before {
+  background-color: rgba(255, 255, 255, 0.2); /* Darken the overlay when button is active */
+}
+
+.listSearch > button:disabled::after {
+  opacity: 0.6;
+}
+
+
+.listResult {
+  flex: 3;
+}

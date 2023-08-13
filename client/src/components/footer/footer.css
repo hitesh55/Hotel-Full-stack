@@ -1,0 +1,122 @@
+.footer {
+  width: 100%;
+  max-width: 1024px;
+  font-size: 12px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.fLists {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.fList {
+  list-style: none;
+  padding: 0;
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  color: #006d8e;
+  cursor: pointer;
+}
+
+.fSocial {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.fSocialList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.fSocialListItem {
+  margin-right: 10px;
+}
+
+.fSocialListItem:last-child {
+  margin-right: 0;
+}
+
+.fSocialListItem a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0071c2;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  transform-origin: center;
+}
+
+.fSocialListItem a:hover {
+  background-color: #005fa8;
+  transform: rotate(360deg);
+}
+.fSocialListItem a:hover .icon {
+  transform: rotate(360deg);
+  transition: transform 0.3s ease;
+}
+
+.fContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.fContactText {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.fContactInfo {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+.fText {
+  text-align: center;
+  font-size: 12px;
+  color: #999999;
+  margin-top: 20px;
+}
+
+.fText::before,
+.fText::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: #999999;
+  margin: 10px auto;
+}
+
+.fText::before {
+  margin-bottom: 10px;
+}
+
+.fText::after {
+  margin-top: 10px;
+}
+
+.fText a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.fText a:hover {
+  text-decoration: underline;
+}
